@@ -1,0 +1,77 @@
+* {
+		box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0 20px; }
+
+main {
+	margin: 30px auto;
+	padding: 30px;
+	max-width: 1200px;
+	width: 100%;
+	height: calc(100vh - 60px);
+	background-color: #3498db;
+	color: #ecf0f1;
+	border-radius: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	flex: 2;
+}
+
+.box {
+	flex: 3;
+	padding: 0 40px;
+}
+
+.buttons {
+	flex: 2;
+	position: relative;
+}
+
+.trigger {
+	line-height: 50px;
+	width: 250px;
+	height: 50px;
+	background-color: #3498db;
+	border: 3px solid #ecf0f1;
+	border-radius: 25px;
+	color: #ecf0f1;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-style: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.tweet {
+	display: inline-block;
+	line-height: 50px;
+	margin-left: 20px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	background-color: #3498db;
+	border: 3px solid #ecf0f1;
+	border-radius: 50%;
+	color: #ecf0f1;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	cursor: pointer;;
+	transition: 0.3s;
+}
+
+.trigger:hover, .tweet:hover {
+	transform: scale(1.10);
+	background-color: #ecf0f1;
+	color: #3498db;
+}
